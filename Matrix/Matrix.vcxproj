@@ -128,13 +128,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Generate.cpp" />
+    <ClCompile Include="KeyboardGenerator.cpp" />
     <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="RandomGenerator.cpp" />
     <ClCompile Include="Row.cpp" />
     <ClCompile Include="Task.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Generate.h" />
+    <ClInclude Include="KeyboardGenerator.h" />
     <ClInclude Include="Matrix.h" />
+    <ClInclude Include="RandomGenerator.h" />
     <ClInclude Include="Row.h" />
     <ClInclude Include="Task.h" />
   </ItemGroup>

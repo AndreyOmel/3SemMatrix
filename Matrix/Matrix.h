@@ -1,11 +1,12 @@
 #pragma once
 #include "Row.h"
+#include "Generate.h"
 #include <iostream>
 namespace  matrix {
 	class Matrix {
 		public:
+			Matrix(int rows, int cols, Generator* g);
 			Matrix(int rows, int cols);
-			Matrix();
 
 			friend std::ostream& operator<<(std::ostream& os, const Matrix& mat);
 			
@@ -16,6 +17,6 @@ namespace  matrix {
 			std::vector<Row>matrix;
 			int rows;
 			int cols;
-
+			Generator* g;
 	};
 }
