@@ -7,16 +7,16 @@ namespace  matrix {
 		public:
 			Matrix(int rows, int cols, Generator* g);
 			Matrix(int rows, int cols);
-
+			
 			friend std::ostream& operator<<(std::ostream& os, const Matrix& mat);
 			
 			Row& operator[](const int index);
-			~Matrix();
+			
 
 		private:
 			std::vector<Row>matrix;
-			int rows;
-			int cols;
+			size_t rows;
+			size_t cols;
 			Generator* g;
 	};
 }

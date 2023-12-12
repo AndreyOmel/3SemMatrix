@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <random>
 #include"Generate.h"
 
@@ -10,6 +10,6 @@ public:
     RandomGenerator(const int min, const int max);
 
 
-    // Реализация функции генерации случайного числа
+    // Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё РіРµРЅРµСЂР°С†РёРё СЃР»СѓС‡Р°Р№РЅРѕРіРѕ С‡РёСЃР»Р°
     int generate() override;
 };

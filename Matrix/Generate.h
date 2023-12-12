@@ -1,13 +1,13 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <random>
 
 class Generator {
 public:
-    // Виртуальная функция генерации одного числа
+    // Р’РёСЂС‚СѓР°Р»СЊРЅР°СЏ С„СѓРЅРєС†РёСЏ РіРµРЅРµСЂР°С†РёРё РѕРґРЅРѕРіРѕ С‡РёСЃР»Р°
     virtual int generate() = 0;
 
-    // Виртуальный деструктор
+    // Р’РёСЂС‚СѓР°Р»СЊРЅС‹Р№ РґРµСЃС‚СЂСѓРєС‚РѕСЂ
     virtual ~Generator() = 0 {};
 };
 

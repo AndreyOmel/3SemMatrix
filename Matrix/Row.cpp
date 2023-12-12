@@ -8,11 +8,14 @@ Row::Row(std::initializer_list<int> r):
 Row::Row(int cols) :
 	row(cols, 0)
 {
+	if (cols <= 0) { throw std::out_of_range("Incorrect size"); }
 
 }
 int& Row::operator[](const int index)
 {
-	return row[index];
+	if (index < row.size()) {
+		return row[index];
+	}
 
 }
 

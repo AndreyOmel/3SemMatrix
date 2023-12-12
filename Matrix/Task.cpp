@@ -1,13 +1,14 @@
 #include "Task.h"
 #include <cmath>
 #include <vector>
-Task::Task()
+Task::Task(matrix::Matrix m, int rows, int cols):
+	m(m),rows(rows),cols(cols)
 {
 	
 
 }
 
-matrix::Matrix Task::DoFirst(matrix::Matrix m, int rows, int cols)
+matrix::Matrix Task::DoFirst()
 {
 	for (int c = 0; c < cols; c++) {
 		int min = m[0][c];
@@ -24,7 +25,7 @@ matrix::Matrix Task::DoFirst(matrix::Matrix m, int rows, int cols)
 	return m;
 }
 
-matrix::Matrix Task::DoSecond(matrix::Matrix m, int rows, int cols)
+matrix::Matrix Task::DoSecond()
 {
 	std::vector<int> a;
 	for (int c = 0; c < cols; c++) {
