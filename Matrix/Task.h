@@ -5,11 +5,10 @@
  
 class Task {
 public:
-	Task(matrix::Matrix m, int rows, int cols);
+	Task(matrix::Matrix m);
 	matrix::Matrix DoFirst();
 	matrix::Matrix DoSecond();
 private:
 	matrix::Matrix m;
-	size_t rows;
-	size_t cols;
+	
 };

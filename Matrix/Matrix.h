@@ -7,7 +7,9 @@ namespace  matrix {
 		public:
 			Matrix(int rows, int cols, Generator* g);
 			Matrix(int rows, int cols);
-			
+			int Get_rows();
+			int Get_cols();
+
 			friend std::ostream& operator<<(std::ostream& os, const Matrix& mat);
 			
 			Row& operator[](const int index);

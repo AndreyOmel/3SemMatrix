@@ -1,8 +1,8 @@
 #include "Task.h"
 #include <cmath>
 #include <vector>
-Task::Task(matrix::Matrix m, int rows, int cols):
-	m(m),rows(rows),cols(cols)
+Task::Task(matrix::Matrix m):
+	m(m)
 {
 	
 
@@ -10,6 +10,8 @@ Task::Task(matrix::Matrix m, int rows, int cols):
 
 matrix::Matrix Task::DoFirst()
 {
+	int cols = m.Get_cols();
+	int rows = m.Get_rows();
 	for (int c = 0; c < cols; c++) {
 		int min = m[0][c];
 		int minR = 0;
@@ -27,6 +29,8 @@ matrix::Matrix Task::DoFirst()
 
 matrix::Matrix Task::DoSecond()
 {
+	int cols = m.Get_cols();
+	int rows = m.Get_rows();
 	std::vector<int> a;
 	for (int c = 0; c < cols; c++) {
 		if (m[0][c] <= m[rows - 1][c]) {
@@ -38,15 +42,7 @@ matrix::Matrix Task::DoSecond()
 	int col_i = 0;
 	for (col_i = 0; col_i < cols1; col_i++) {
 		for (int r = 0; r < rows; r++) {
-
-
-			//std::cout << m[r][a[col_i]]<<" "<< a[col_i]<<std::endl;
 			m1[r][col_i] = m[r][a[col_i]];
-			//std::cout << m1[r][col_i] << std::endl;
-			
-			
-
-
 		}
 	}
 	

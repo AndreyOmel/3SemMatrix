@@ -33,7 +33,7 @@ int main() {
 		RandomGenerator gen(0, 100);
 		matrix::Matrix m = Matrix(rows, cols, &gen);
 		std::cout << m << std::endl << std::endl;
-		Task t = Task(m, rows, cols);
+		Task t = Task(m);
 		m =t.DoFirst();
 		std::cout << m << std::endl << std::endl;
 		m = t.DoSecond();
